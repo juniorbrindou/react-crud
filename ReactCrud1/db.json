@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Brindou",
+      "username": "Gnépa Junior"
+    },
+    {
+        "id": 1,
+        "name": "Mufinella",
+        "username": "Vevers"
+    },
+    {
+        "id": 2,
+        "name": "Kikelia",
+        "username": "Allsepp"
+    }
+  ]
+}

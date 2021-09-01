@@ -1,18 +1,21 @@
 import './App.css';
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import UserTable from './tables/UserTable'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AddUserForm from './forms/AddUserForm.js'
+import axios from 'axios';
 const App = () => {
-  const usersData = [
-    { id: 1, name: 'Tania', username: 'floppydiskette' },
-    { id: 2, name: 'Craig', username: 'siliconeidolon' },
-    { id: 3, name: 'Ben', username: 'benisphere' },
-  ]
-  const [users, setUsers] = useState(usersData)
+  
+  const [users, setUsers] = useState([{id:1, name:'', username:''}])
+  useEffect(() => {
+    axios.get("http://localhost:3001/user")
+    .then(data=>setUsers(data.data))
+  });
+
   const addUser = (user) => {
     user.id = users.length + 1
-    setUsers([...users, user]) 
+    setUsers([...users, user])
+    axios.post("http://localhost:3001/users",user)
   }
   
   const deleteUser = (id) => {
