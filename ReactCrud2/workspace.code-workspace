@@ -21,6 +21,9 @@
 		"editor.fontSize": 17,
 		"editor.fontWeight": "900",
 		"editor.fontLigatures": true,
-		"editor.letterSpacing": 1
+		"editor.letterSpacing": 1,
+		"terminal.integrated.fontFamily": "monospace",
+		"terminal.integrated.fontSize":16,
+		"terminal.integrated.fontWeight": "bold",
 	}
 }
