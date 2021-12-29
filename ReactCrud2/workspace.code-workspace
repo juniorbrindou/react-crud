@@ -5,6 +5,22 @@
 		}
 	],
 	"settings": {
-		
+		"editor.tabSize": 6,
+		"emmet.includeLanguages": {
+			"html": "html",
+			"javascript":"javascriptreact",
+			"css":"css"
+		},
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnType": true,
+		"auto-close-tag.fullMode": true,
+		"fontAwesomeAutocomplete.enableElevatedSortPriority": true,
+		// "editor.fontFamily": "Fira Code Medium",
+		// "editor.fontFamily": "Comic Sans MS",
+		"editor.fontFamily": "Tempus Sans ITC",
+		"editor.fontSize": 17,
+		"editor.fontWeight": "900",
+		"editor.fontLigatures": true,
+		"editor.letterSpacing": 1
 	}
 }
